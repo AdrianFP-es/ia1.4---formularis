@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari d'inscripció</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Formulari d'inscripció</h1>
+    <p>Activitats extraescolars - Curs 2026-2027</p>
+
+    <form action="#" method="get">
+        
+        <fieldset>
+            <legend>1. Dades personals</legend>
+
+            <label for="nom">Nom*</label><br>
+                <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required><br><br>
+
+            <label for="cognoms">Cognoms*</label><br>
+                <input type="text" id="cognoms" name="cognoms" placeholder="Escriu els cognoms" required><br><br>
+
+            <label for="email">Correu electrònic*</label><br>
+                <input type="email" id="email" name="email" placeholder="exemple@correu.com" required><br><br>
+
+            <label for="telefono">Telèfon</label><br>
+                <input type="tel" id="telefono" name="telefono" placeholder="600 000 000"><br><br>
+
+            <label for="fecha_nacimiento">Data de naixement*</label><br>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+
+            <label for="contraseña">Contrasenya*</label><br>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Introdueix una contrasenya" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Informació acadèmica</legend>
+
+            <label for="curso">Curs actual*</label><br>
+            <select id="curso" name="curso" required>
+                <option value="" disabled selected>Selecciona un curs</option>
+                <option value="1eso">1r d'ESO</option>
+                <option value="2eso">2n d'ESO</option>
+                <option value="3eso">3r d'ESO</option>
+                <option value="4eso">4t d'ESO</option>
+            </select><br><br>
+
+            <label>Activitat que vols realitzar *</label><br>
+                <input type="radio" id="programacio" name="actividad" value="programacio" required>
+            <label for="programacio">Programació</label><br>
+                <input type="radio" id="robotica" name="actividad" value="robotica">
+            <label for="robotica">Robòtica</label><br>
+                <input type="radio" id="disseny" name="actividad" value="disseny">
+            <label for="disseny">Disseny web</label><br>
+                <input type="radio" id="esports" name="actividad" value="esports">
+            <label for="esports">Esports</label><br><br>
+
+            <label>Dies disponibles</label><br>
+                <input type="checkbox" id="dilluns" name="dies" value="dilluns">
+            <label for="dilluns">Dilluns</label><br>
+                <input type="checkbox" id="dimarts" name="dies" value="dimarts">
+            <label for="dimarts">Dimarts</label><br>
+                <input type="checkbox" id="dimecres" name="dies" value="dimecres">
+            <label for="dimecres">Dimecres</label><br>
+                <input type="checkbox" id="dijous" name="dies" value="dijous">
+            <label for="dijous">Dijous</label><br>
+                <input type="checkbox" id="divendres" name="dies" value="divendres">
+            <label for="divendres">Divendres</label><br><br>
+
+            <label for="nivell">Nivell d'experiència (0 a 10):</label><br>
+                <input type="range" id="nivell" name="nivell" min="0" max="10" value="5">
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Informació addicional</legend>
+
+            <label for="color-preferit">Color preferit per a la teva identificació</label><br>
+                <input type="color" id="color-preferit" name="color-preferit" value="#4285db"><br><br>
+
+            <label for="document">Adjuntar document:</label><br>
+                <input type="file" id="document" name="document"><br><br>
+
+            <label for="observacions">Observacions:</label><br>
+                <textarea id="observacions" name="observacions" placeholder="Escriu les teves observacions"></textarea><br><br>
+
+            <input type="checkbox" id="condicions" name="condicions" required>
+                <label for="condicions">Accepto les condicions de participació *</label>
+        </fieldset>
+
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Netejar</button>
+
+    </form>
+
+</body>
+</html>
